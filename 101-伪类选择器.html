@@ -5,11 +5,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>伪类选择器</title>
+    <style>
+        /* 未访问的连接 a：link */
+        a:link {
+            color: #333;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: #888;
+        }
+
+        /* 选择鼠标经过的那个连接 */
+        a:hover {
+            color: green;
+        }
+
+        a:active {
+            color: blue;
+        }
+
+        /* 把获取光标的input表单元素选出来 */
+        input:focus {
+            background-color: burlywood;
+        }
+    </style>
 </head>
 
 <body>
+    <a href="#">小猪佩奇</a>
 
+    <input type="text" value="请输入1">
+    <input type="text" value="请输入2">
+    <input type="text" value="请输入3">
 </body>
 
 </html>
